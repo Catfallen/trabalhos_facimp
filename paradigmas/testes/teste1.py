@@ -1,5 +1,7 @@
-a = [1,2,3]
-b = a
-b.append(4)
-print(a)
-print(b)
+def fatorial(n):
+    if n == 0:
+        return 1
+    else:
+        return n*fatorial(n-1)
+print(fatorial(5))
+
