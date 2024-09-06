@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="total"></h1>
+    <button id="btn">Iniciar</button>
+    <script>
+        const h1 = document.getElementById("total");
+const body = document.getElementsByTagName("body")[0];
+const btn = document.getElementById("btn");
+
+body.style.backgroundColor = "white";
+
+function calculoMedia(){
+    let total = 0;
+    for(let i = 0;i<4;i++){
+        total+= parseFloat(window.prompt("Informe a nota "+i+": "))
+    }
+
+    let media = total/4
+    h1.innerHTML = media.toString();
+}
+
+btn.addEventListener("click",calculoMedia);
+
+
+    </script>
+</body>
+</html>
