@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="">Ano de nascimento: </label>
+    <input type="text" name="" id="nascimento" placeholder="Digite o ano de nascimento">
+    <label for="" id="resultado"></label>
+    <button onclick="calcularIdade()">Calcular</button>
+
+    <script>
+        const anoAtual = new Date().getFullYear(); //função automatica que retonra o ano atual
+        function calcularIdade(){
+            let anoNascimento = parseInt(document.getElementById("nascimento").value);//retorna o texto do input "nascimento" e converte em inteiro            
+            let idade = anoAtual-anoNascimento; //Calcula a idade
+            
+            document.getElementById("resultado").textContent =` ${idade} anos de idade`;//Altera o texto do elemento com id "resultado" 
+        }
+    </script>
+</body>
+</html>
