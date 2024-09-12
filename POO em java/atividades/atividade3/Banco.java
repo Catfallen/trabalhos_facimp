@@ -1,7 +1,4 @@
 package atividade3;
-
-
-
 public class Banco {
 	private String nome;
 	private double salarioBruto;
