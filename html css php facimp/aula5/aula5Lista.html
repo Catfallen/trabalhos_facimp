@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="addItem()">Adicionar um item</button>
+    <button onclick="limpar()">Limpar</button>
+    <button onclick="changeColor()"></button>
+    <ul id="lista">
+
+    </ul>
+    
+    <script>
+        const lista =document.getElementById("lista");
+        function addItem(){
+            let quantidade = [...lista.getElementsByTagName("li")].length;
+            let newItem = document.createElement("li")
+            newItem.textContent = "item"+(quantidade+1)
+            lista.appendChild(newItem);
+        
+        }
+        function changeColor(){
+            lista.style.color = "blue";
+        }
+        function limpar(){  
+            lista.innerHTML = "";
+        }
+    </script>
+</body>
+</html>
