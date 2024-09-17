@@ -20,4 +20,5 @@ gerente1 = Gerente("Markim",10000000)
 vendedor1 = Vendedor("Vendedor",1)
 
 print(vendedor1.CalculoSalario(500000000))
+print("Fim")
 
