@@ -4,22 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        body{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: beige;
-        }
-        .main{
-            background-color: white;
-            width: 50%;
-            text-align: center;
-        }
-        .main input{
-            text-align: right;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="main">
@@ -35,27 +20,6 @@
             
     </div>
 
-    <script>
-        const a = document.getElementById("a");
-        const b = document.getElementById("b");
-        const total = document.getElementById("total");
-
-        function soma(){
-            total.value = parseFloat(a.value)+parseFloat(b.value);
-            console.log(total);
-        }
-        function subtracao(){
-            total.value = parseFloat(a.value)-parseFloat(b.value);
-        }
-        function multiplicar(){
-            total.value = parseFloat(a.value)*parseFloat(b.value);
-        }
-        function divisao(){
-            total.value = parseFloat(a.value)/parseFloat(b.value);
-        }
-
-
-
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>

@@ -1,4 +1,4 @@
-package atividade5;
+package atv5;
 
 public class Carro extends Veiculo{
 	String placa;
