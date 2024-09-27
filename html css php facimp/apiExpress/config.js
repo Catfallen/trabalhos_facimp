@@ -6,8 +6,8 @@ const { Pool } = require('pg'); // Importa a classe Pool do módulo pg
 const pool = new Pool({
     user: 'postgres',         // Insira o seu usuário do banco de dados
     host: 'localhost',           // O endereço do servidor do banco de dados
-    database: 'nome_do_banco',   // O nome do banco de dados
-    password: 'sua_senha',       // A senha do usuário do banco de dados
+    database: 'banco',   // O nome do banco de dados
+    password: 'markim',       // A senha do usuário do banco de dados
     port: 5432,                  // A porta padrão do PostgreSQL
 });
 
