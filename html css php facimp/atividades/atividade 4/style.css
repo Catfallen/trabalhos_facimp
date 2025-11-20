@@ -1,0 +1,14 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: beige;
+}
+.main{
+    background-color: white;
+    width: 50%;
+    text-align: center;
+}
+.main input{
+    text-align: right;
+}

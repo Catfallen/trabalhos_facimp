@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" id="meuform">
+        <input type="text" id="nome">
+        <input type="submit" value="Enviar">
+    </form>
+
+    <script>
+        const form = document.getElementById("meuform"); //objeto formulario 
+
+        //AddEvent adiciona um evento no objeto(clique,enviar,passar o mouse em cima, etc.)
+        form.addEventListener("submit",function (event){
+            event.preventDefault(); //esse evento impede o navegador de atualizar a pagina caso o usuario envie o formulario.
+            let nome = document.getElementById("nome").value; //pega o valor do input nome
+            alert("Ola "+nome);
+        })
+    </script>
+</body>
+</html>
